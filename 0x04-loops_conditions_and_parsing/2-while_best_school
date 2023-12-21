@@ -2,8 +2,7 @@
 # prints a Bast School 10 times using loop
 
 i = 0
-while [$i -lt 10 ]
-do
-	echo "Best School"
-	(( i++ ))
+while [ "$i" -lt 10 ];do
+    echo "Best School"
+    (( i++ ))
 done
