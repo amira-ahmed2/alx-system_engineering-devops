@@ -7,11 +7,11 @@ sudo apt-get install haproxy -y
 # Configure HAProxy
 server_config=\
 "
-frontend mira-frontend
+frontend http_frontend
         bind *:80
         mode http
-        default_backend mira-backend
-backend mira-backend
+        default_backend http_backend
+backend http_backend
         balance roundrobin
         server 510027-web-01 100.26.255.59:80 check
         server 510027-web-02 54.158.183.1:80 check
