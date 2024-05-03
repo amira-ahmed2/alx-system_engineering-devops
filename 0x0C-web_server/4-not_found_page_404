@@ -1,1 +1,20 @@
 #!/usr/bin/env bash
+# installs nginx and configures
+
+sudo apt-get update -y -qq && \
+	 sudo apt-get install nginx -y
+
+echo -e "\nSetting up some minor stuff.\n"
+sudo service nginx start
+sudo ufw allow 'Nginx HTTP'
+sudo chown -R "$USER":"$USER" /var/www/html
+sudo chmod -R 755 /var/www
+cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html.bckp
+echo -e "Hello World!" | dd status=none of=/var/www/html/index.nginx-debian.html
+
+echo "HTTP/1.1 404 Not Found" >> /var/www/html/error_404.html
+sudo sed -i '25i\	error_page 404 /error_404.html;' /etc/nginx/sites-available/default
+
+sudo service nginx restart
+
+echo -e "\nCompleted.\n"
