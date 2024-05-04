@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-sudo service apache2 start
+# start Apache so as to return a
+# conatining Hello Holberton
+service apache2 start
