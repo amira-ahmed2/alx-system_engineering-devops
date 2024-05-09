@@ -1,8 +1,51 @@
 To answer this question simply.
 
+DNS request
+
+Domain Name System request is a query made by a device to a DNS server to translate a domain name into an IP address. 
+When you type a domain name into your web browser's address bar or click on a link, 
+your device needs to know the corresponding IP address of the server hosting that domain to establish a connection.
+So, it sends a DNS request to a DNS server,
+which then looks up the IP address associated with the domain name and returns it to your device.
+This allows your device to connect to the correct server and retrieve the requested web page or content.
+
+_____________________________________________________________________
+
+Firewall
+A firewall is a network security device or software that monitors and controls incoming and outgoing network traffic based on predetermined security rules.
+Its primary function is to establish a barrier between a trusted internal network and untrusted external networks, such as the Internet,
+to prevent unauthorized access, malicious activities, and data breaches.
+___________________________________________________________________
+
+HTTPS/SSL
+HTTPS (Hypertext Transfer Protocol Secure) is an extension of HTTP (Hypertext Transfer Protocol) that provides secure communication over a computer network,
+typically the Internet. It is widely used to ensure the confidentiality, integrity, and authenticity of data transmitted between a web browser and a web server.
+HTTPS encrypts the data exchanged between the client (browser) and the server, making it difficult for attackers to intercept or tamper with the communication.
+The security of HTTPS is primarily achieved through the use of SSL/TLS (Secure Sockets Layer/Transport Layer Security) protocols.
+SSL/TLS protocols establish an encrypted connection between the client and the server,
+ensuring that data transmitted over the network remains confidential and cannot be read by unauthorized parties
+
+___________________________________________________________________
+
+Load-balancer
+
+A load balancer is a networking device or software application that distributes incoming network traffic across multiple servers or computing resources to ensure optimal resource utilization, maximize throughput, minimize response time, and avoid overload on any single server. Load balancers are commonly used in large-scale web applications, cloud computing environments, and high-traffic websites to improve performance, scalability, and reliability.
+
+___________________________________________________________________
+
 What’s a Server?
 A server is a computer program or a device that provides functionality or services to other devices or programs, known as clients, over a network. Servers are designed to handle requests from clients and deliver responses accordingly. They can range from simple machines serving basic files to complex systems providing various services such as email, websites, databases
 ___________________________________________________________________
 
-DNS request
+Web server
+A web server is a type of server software that delivers web content to clients over the internet or an intranet. It processes incoming requests from web browsers or other clients, retrieves the requested resources, and sends them back to the client for display in the browser. Web servers play a fundamental role in hosting websites, web applications, and other web-based services, making them accessible to users worldwide.
 
+___________________________________________________________________
+
+Application server
+An application server is a type of server software responsible for hosting and managing applications, services, and business logic in a distributed computing environment. It provides the runtime environment and infrastructure necessary for executing and managing application code, handling user requests, and facilitating communication between clients and backend systems.
+
+___________________________________________________________________
+
+Database
+A database is a structured collection of data organized and stored in a way that allows efficient retrieval, updating, and management of information. It serves as a central repository for storing and managing structured data, making it accessible to users and applications.
