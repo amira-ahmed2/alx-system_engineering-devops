@@ -7,5 +7,5 @@ Host *
     PasswordAuthentication no
     HashKnownHosts yes
     GSSAPIAuthentication yes
-    HostName 35.153.194.142
+    HostName 34.201.61.222
     User ubuntu
